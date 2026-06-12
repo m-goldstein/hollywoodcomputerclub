@@ -69,9 +69,6 @@ export async function POST(request: Request) {
     email,
     unsubscribed: false,
     ...(name ? splitName(name) : {}),
-    properties: {
-      source: "website_landing_page",
-    },
     ...(segmentId ? { segments: [{ id: segmentId }] } : {}),
     ...(topicId ? { topics: [{ id: topicId, subscription: "opt_in" }] } : {}),
   });

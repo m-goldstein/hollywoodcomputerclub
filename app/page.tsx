@@ -101,6 +101,19 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section-grid" id="updates">
+        <h2>Community Updates</h2>
+        <div>
+          <p>
+            Join the Hollywood Computer Club list for practical meeting updates:
+            dates, room details, what people are bringing, calls for demos or
+            repairs, and occasional notes from the local retro-computing
+            community.
+          </p>
+          <UpdatesSignup />
+        </div>
+      </section>
+
       <section className="section-grid" id="bring">
         <h2>What Shows Up</h2>
         <ul>
@@ -124,19 +137,6 @@ export default function Home() {
             beginners, collectors, builders, and someone trying to identify a
             cable, board, disk, or mystery port.
           </p>
-        </div>
-      </section>
-
-      <section className="section-grid" id="updates">
-        <h2>Community Updates</h2>
-        <div>
-          <p>
-            Join the Hollywood Computer Club list for practical meeting updates:
-            dates, room details, what people are bringing, calls for demos or
-            repairs, and occasional notes from the local retro-computing
-            community.
-          </p>
-          <UpdatesSignup />
         </div>
       </section>
 
