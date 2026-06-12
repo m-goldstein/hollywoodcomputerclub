@@ -1,3 +1,5 @@
+import { UpdatesSignup } from "./updates-signup";
+
 const meetups = [
   "Retro Macintosh, beige boxes, weird laptops, UNIX workstations",
   "Arcade boards, consoles, controllers, CRTs, repairs, restorations",
@@ -37,6 +39,7 @@ export default function Home() {
         <a href="#about">about</a>
         <a href="#meet">meet</a>
         <a href="#bring">bring</a>
+        <a href="#updates">updates</a>
         <a href="#notes">notes</a>
         <a href="#contact">contact</a>
       </nav>
@@ -121,6 +124,19 @@ export default function Home() {
             beginners, collectors, builders, and someone trying to identify a
             cable, board, disk, or mystery port.
           </p>
+        </div>
+      </section>
+
+      <section className="section-grid" id="updates">
+        <h2>Community Updates</h2>
+        <div>
+          <p>
+            Join the Hollywood Computer Club list for practical meeting updates:
+            dates, room details, what people are bringing, calls for demos or
+            repairs, and occasional notes from the local retro-computing
+            community.
+          </p>
+          <UpdatesSignup />
         </div>
       </section>
 
