@@ -46,16 +46,16 @@ function createWelcomeEmail(name: string) {
   const firstName = splitName(name).firstName;
   const greeting = firstName ? `Hello ${firstName},` : "Hello,";
   const escapedGreeting = escapeHtml(greeting);
+  const updateCopy =
+    "Stay on the lookout for information about upcoming meetups, demo calls, repair nights, venue notes, and any date, room, or setup changes before the next gathering.";
 
   return {
     subject: "Welcome to Hollywood Computer Club",
     text: `${greeting}
 
-TRANSMISSION RECEIVED.
-
 You are on the Hollywood Computer Club update list.
 
-Stay on the lookout for information about upcoming meetups, demo calls, repair nights, venue notes, and any date, room, or setup changes before the next gathering.
+${updateCopy}
 
 Bring curiosity. Bring a machine if you have one. Bring a question if you do not.
 
@@ -75,12 +75,12 @@ Hollywood, Florida
             <tr>
               <td style="padding:18px;">
                 <p style="margin:0 0 14px;font-weight:700;">HOLLYWOOD COMPUTER CLUB</p>
-                <p style="margin:0 0 18px;color:#8a2600;font-weight:700;">TRANSMISSION RECEIVED</p>
                 <p style="margin:0 0 14px;">${escapedGreeting}</p>
                 <p style="margin:0 0 14px;">You are on the Hollywood Computer Club update list.</p>
-                <p style="margin:0 0 14px;">Stay peeled for concise dispatches about upcoming meetups, demo calls, repair nights, venue notes, and any date, room, or setup changes before the next gathering.</p>
+                <p style="margin:0 0 14px;">${updateCopy}</p>
                 <p style="margin:0 0 18px;">Bring curiosity. Bring a machine if you have one. Bring a question if you do not.</p>
-                <p style="margin:0;border-top:1px dashed #111;padding-top:12px;color:#555;">Hollywood Computer Club // Hollywood, Florida</p>
+                <p style="margin:0 0 14px;">Hollywood Computer Club<br>Hollywood, Florida</p>
+                <p style="margin:0;border-top:1px dashed #111;padding-top:12px;color:#555;">This inbox is not monitored. Please contact hollywoodcomputerclub@gmail.com for a response from the team.</p>
               </td>
             </tr>
           </table>
