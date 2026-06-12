@@ -77,7 +77,8 @@ export function UpdatesSignup() {
       <p className="signup-note">
         Opt in for meeting dates, venue notes, show-and-tell calls,
         restoration nights, and occasional club announcements. No spam, and you
-        can unsubscribe from any email.
+        can unsubscribe from any email. Email data collected here is never
+        shared or sold with third-party data brokers.
       </p>
       <p
         aria-live="polite"
