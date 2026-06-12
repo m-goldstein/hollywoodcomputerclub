@@ -55,12 +55,15 @@ TRANSMISSION RECEIVED.
 
 You are on the Hollywood Computer Club update list.
 
-Stay peeled for concise dispatches about upcoming meetups, demo calls, repair nights, venue notes, and any date, room, or setup changes before the next gathering.
+Stay on the lookout for information about upcoming meetups, demo calls, repair nights, venue notes, and any date, room, or setup changes before the next gathering.
 
 Bring curiosity. Bring a machine if you have one. Bring a question if you do not.
 
 Hollywood Computer Club
 Hollywood, Florida
+
+
+** This inbox is not monitored. Please contact hollywoodcomputerclub@gmail.com for a response from the team **
 `,
     html: `<!doctype html>
 <html>
